@@ -54,25 +54,10 @@
 	
 <a class="screen-reader-text" href="#content">Skip to content</a>
 
-
-<?php 
-	if ( wp_is_mobile() ) {
-?>
-	<div id="mobile-nav-wrapper">
-		<nav class="main-navigation mobile">
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav>
-    	<span id="nav-close-icon"></span>
-	</div>
-	<?php } ?>
-
 <header class="site-header">
-	<span class="header-divider"></span>
+	<div class="logo-wrapper">
+		<img src="" alt="Center for Autismes Logo" />
+	</div>
 	<?php if ( !wp_is_mobile() ) {
 	?>
 	<nav class="main-navigation">
@@ -83,13 +68,6 @@
 			) );
 			?>
 	</nav>
-	</div>
-			<?php } ?>
-			
-	
-	<figure class="responsive-menu">
-		<img src="/wp-freelance/wp-content/themes/jespernpedersen/assets/images/burger-icon-menu.png" alt="Icon for Responsive Menu">
-	</figure>
-	</div>
+	<?php } ?>
 </header>
 	
