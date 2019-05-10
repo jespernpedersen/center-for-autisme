@@ -81,8 +81,9 @@ header.site-header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: purple;
-    color: #FFF;
+    background-color: #ebebeb;
+    border-bottom: 1px solid #ccc;
+    color: #222;
     font-family: "Helvetica";
 }
 
@@ -118,6 +119,11 @@ Repeatable Elements
 
 --------------------------------------------------------
 */
+
+body,
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 /* 
