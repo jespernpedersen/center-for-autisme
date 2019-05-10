@@ -49,6 +49,16 @@ Grid Layout
 --------------------------------------------------------
 */
 
+.container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+header .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
 
 /* 
 --------------------------------------------------------
@@ -118,18 +128,24 @@ Main
 --------------------------------------------------------
 */
 
-main:before {
-    content: "Main: ";
+main {
+    background-color: #ebebeb;
+    width: 100%;
+    min-height: 600px;
 }
 
-main {
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: darkred;
+main #slider {
+    width: 100%;
+    background-color: green;
     color: #FFF;
-    font-family: "Helvetica";
-    min-height: 600px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+main .three-articles {
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+    color: #FFF;
+    background-color: blue;
 }
