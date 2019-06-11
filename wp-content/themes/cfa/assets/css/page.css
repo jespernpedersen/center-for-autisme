@@ -1,0 +1,270 @@
+/* 
+--------------------------------------------------------
+
+    File Purpose: 
+    This file is only used for page specific styling that is not for the frontpage or main repeatable elements such as
+    header, footer and navigation. With only acceptable exceptions, if the repeatable elements should alter from its
+    original form to the subpage. 
+
+    Authors: 
+    Jesper Pedersen
+    Joachim Thorius
+    Andrea Tos Thomassen
+    Kresten B. Carr
+    Emil Starup
+
+--------------------------------------------------------
+*/
+
+
+/* 
+--------------------------------------------------------
+
+Subpage Navigation
+
+--------------------------------------------------------
+*/
+
+nav#main-navigation ul {
+    margin-top: 0;
+}
+
+.hero-row.main-menu-active {
+    top: 0;
+}
+
+.hero-row.main-menu-active .navigation-wrapper {
+    margin-bottom: 15px;
+}
+
+
+/* 
+--------------------------------------------------------
+
+Featured Image
+
+--------------------------------------------------------
+*/
+
+#featured-image {
+    padding: 200px 0 10px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+    position: relative;
+}
+
+#featured-image:before {
+    content: "";
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+
+/* 
+--------------------------------------------------------
+
+Breadcrumb
+
+--------------------------------------------------------
+*/
+
+#breadcrumb {
+    background-color: var(--dark-bg);
+    padding: 13px 0;
+    color: #FFF;
+}
+
+#breadcrumb span:not(:last-of-type):after {
+    content: ">";
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#breadcrumb span a,
+#breadcrumb span span {
+    border-bottom: 1px solid #FFF;
+}
+
+#breadcrumb span span:hover {
+    cursor: pointer;
+}
+
+
+/* 
+--------------------------------------------------------
+
+Category Navigation
+
+--------------------------------------------------------
+*/
+
+#category-navigation {
+    color: #FFF;
+}
+
+#category-navigation>div {
+    padding-bottom: 5px;
+}
+
+#category-navigation h2 {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#category-navigation ul li {
+    display: inline-block;
+    width: 100%;
+}
+
+#category-navigation ul li a {
+    padding: 12px 15px;
+    display: block;
+    font-size: 15px;
+}
+
+#category-navigation li.has-sub-menu a {
+    padding-bottom: 0;
+}
+
+#category-navigation .sub-menu li a {
+    padding-left: 30px;
+    font-size: 13px;
+    padding-bottom: 0px;
+}
+
+#category-navigation .sub-menu li a:before {
+    content: "-";
+    margin-right: 7px;
+}
+
+
+/* 
+--------------------------------------------------------
+
+Page Layout
+
+--------------------------------------------------------
+*/
+
+#subpage .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 30px;
+    padding: 70px 0;
+    margin-bottom: 50px;
+}
+
+
+/* 
+--------------------------------------------------------
+
+Page Aesthethics
+
+--------------------------------------------------------
+*/
+
+h1 {
+    border-bottom: 4px solid;
+    padding-bottom: 9px;
+    margin-bottom: 20px;
+    font-size: 34px;
+}
+
+body.education-category #featured-image:before {
+    background-color: var(--education);
+}
+
+body.network-category #featured-image:before {
+    background-color: var(--network);
+}
+
+body.counsel-category #featured-image:before {
+    background-color: var(--counsel);
+    opacity: 0.5;
+}
+
+body.research-category #featured-image:before {
+    background-color: var(--research);
+}
+
+.education-category #category-navigation>div {
+    background-color: var(--education);
+}
+
+.network-category #category-navigation>div {
+    background-color: var(--network);
+}
+
+.counsel-category #category-navigation>div {
+    background-color: var(--counsel);
+}
+
+.research-category #category-navigation>div {
+    background-color: var(--research);
+}
+
+body.education-category h1,
+body.education-category h2 {
+    border-color: var(--education);
+}
+
+body.network-category h1,
+body.network-category h2 {
+    border-color: var(--network);
+}
+
+body.counsel-category h1,
+body.counsel-category h2 {
+    border-color: var(--counsel);
+}
+
+body.research-category h1,
+body.research-category h2 {
+    border-color: var(--research);
+}
+
+
+/* 
+--------------------------------------------------------
+
+Content
+
+--------------------------------------------------------
+*/
+
+#content h2 {
+    margin-top: 30px;
+}
+
+.course-catalog {
+    margin-top: 30px;
+}
+
+.course-catalog li {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.course-catalog li:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+.course-catalog li a {
+    color: #FFF;
+    padding: 8px 15px;
+    background-color: var(--counsel);
+    border-radius: 32px;
+    display: block;
+}
