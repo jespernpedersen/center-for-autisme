@@ -63,27 +63,3 @@ function jnp_scripts() {
 	wp_enqueue_script( 'jnp-scripts', get_template_directory_uri() . '/assets/js/scripts.js' );
 }
 add_action( 'wp_enqueue_scripts', 'jnp_scripts' );
-
-function jnp_create_post_custom_post() {
-	register_post_type('custom_post', 
-		array(
-		'labels' => array(
-			'name' => __('Portfolio', 'jnp'),
-		),
-		'menu_icon'    => 'dashicons-schedule',
-		'public'       => true,
-		'hierarchical' => true,
-		'supports'     => array(
-			'title',
-			'editor',
-			'excerpt',
-			'custom-fields',
-			'thumbnail',
-		), 
-		'taxonomies'   => array(
-				'post_tag',
-				'category',
-		) 
-	));
-}
-add_action('init', 'jnp_create_post_custom_post'); // Add our work type
