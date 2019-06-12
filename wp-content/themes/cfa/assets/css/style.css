@@ -15,7 +15,7 @@
 */
 
 
-/* 
+/*  
 	--------------------------------------------------------
 
 	Colors
@@ -188,8 +188,12 @@ p {
     font-size: 16px;
 }
 
-p a {
+p a:not(.btn) {
     border-bottom: 1px solid #000;
+}
+
+p a.blog-image {
+    border-bottom: none;
 }
 
 .shaded {
@@ -911,6 +915,10 @@ form#hero-search {
     padding: 0;
 }
 
+.counsel-primary figure img {
+    margin-top: 35px;
+}
+
 .row.services {
     padding-left: 0;
     padding-right: 0;
@@ -936,6 +944,7 @@ form#hero-search {
 .research .container section article span {
     order: -1;
     margin: 8px 0;
+    display: block;
 }
 
 .research .container section article h3 {

@@ -80,7 +80,7 @@
     <header id="site-header">
         <div class="container">
             <div id="logo-wrapper">
-                <a href="index.html" id="logo" title="Klik her for at gå til forsiden"><img src="/center-for-autisme/wp-content/themes/cfa/assets/images/cfa-logo.png" alt="Center for Autisme"></a>
+                <a href="/center-for-autisme" id="logo" title="Klik her for at gå til forsiden"><img src="/center-for-autisme/wp-content/themes/cfa/assets/images/cfa-logo.png" alt="Center for Autisme"></a>
             </div>
             <aside>
                 <ul id="contact-info">
