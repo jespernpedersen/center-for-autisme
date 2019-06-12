@@ -88,8 +88,7 @@ Breadcrumb
     margin-right: 5px;
 }
 
-#breadcrumb span a,
-#breadcrumb span span {
+#breadcrumb span a {
     border-bottom: 1px solid #FFF;
 }
 

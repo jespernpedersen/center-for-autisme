@@ -37,9 +37,15 @@
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="/center-for-autisme/wp-content/themes/cfa/assets/css//responsive.css">
+    <link rel="stylesheet" href="/center-for-autisme/wp-content/themes/cfa/assets/css//animate.css">
+    <?php 
+    if (!is_front_page()) {
+    ?>
+    <link rel="stylesheet" href="/center-for-autisme/wp-content/themes/cfa/assets/css/page.css">
+    <?php
+    } 
+    ?>
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -68,14 +74,16 @@
 <body class="not-active <?php 
 	if (is_front_page()) { 
 		echo 'home'; 
+	} ?> 
+    <?php 
+	if (!is_front_page()) { 
+       echo get_field('category_color');
 	} ?>">
 	<style>
 		html {
 			margin-top: 0 !important;
 		}
 	</style>
-
-	
     <!-- Header -->
     <header id="site-header">
         <div class="container">

@@ -75,10 +75,16 @@ Typography - Font Displays
     padding: 0;
 }
 
-ul {
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+#content ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-left: 30px;
 }
 
 a,
