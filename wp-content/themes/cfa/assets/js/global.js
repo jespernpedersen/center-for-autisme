@@ -1,24 +1,3 @@
-function temporary_showcase_function() {
-    jQuery(".expanded-navigation li a").click(function(e) {
-        e.preventDefault();
-        nav = jQuery(this.closest("nav"));
-
-        if (jQuery(nav).hasClass("education")) {
-            window.location.replace("education-page.html");
-        }
-        if (jQuery(nav).hasClass("network")) {
-            window.location.replace("network-page.html");
-        }
-        if (jQuery(nav).hasClass("counsel")) {
-            window.location.replace("counsel-page.html");
-        }
-        if (jQuery(nav).hasClass("research")) {
-            window.location.replace("research-page.html");
-        }
-    });
-}
-
-
 function menu() {
 
     // Add Class to make element active, we will reset it first
@@ -100,8 +79,6 @@ function search() {
 
 
 jQuery(function() {
-
-    temporary_showcase_function();
 
     search();
 
