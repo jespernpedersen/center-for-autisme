@@ -551,7 +551,7 @@ nav#main-navigation ul>li:nth-of-type(4):hover:before {
     height: 0;
 }
 
-.expanded-navigation>ul>li>ul.sub-menu li.has-sub-menu a {
+.expanded-navigation>ul>li>ul.sub-menu li.menu-item-has-children a {
     padding-bottom: 3px;
 }
 
@@ -623,11 +623,11 @@ li.has-sub-menu {
     z-index: 2;
 }
 
-.expanded-navigation>ul>li.has-sub-menu a {
+.expanded-navigation li.menu-item-has-children>a {
     padding-bottom: 5px;
 }
 
-.expanded-navigation>ul>li>ul.sub-menu a {
+.expanded-navigation ul li ul.sub-menu a {
     padding-top: 7px;
     padding-bottom: 10px;
 }

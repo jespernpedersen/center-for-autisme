@@ -29,69 +29,17 @@ get_header();
             <div class="navigation-wrapper">
                 <div class="container">
                     <nav class="expanded-navigation">
+
                         <span class="close-menu">
                                 <i class="fas fa-times"></i>
                             </span>
-                        <ul id="education-navigation">
-                            <li class="column-height has-sub-menu"><a href="/stu">Ungdomsuddannelse STU</a>
-                                <ul class="sub-menu">
-                                    <li><a href="/stu/visitation-maalgruppe">Visitation og målgruppe</a></li>
-                                    <li><a href="/stu/besoeg-os">Kom og besøg os</a></li>
-                                    <li><a href="/stu/fag-undervisning">Fag og undervisning</a></li>
-                                    <li><a href="/stu/statusmoeder">Statusmøder</a></li>
-                                    <li><a href="/stu/afslutning-stu">Afslutning af STU</a></li>
-                                    <li><a href="/stu/sygdom-ferie-stu">Sygdom og ferie på STU'en</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="/arbejdsevneafklaring">Arbejdsevnearklaring</a></li>
-                            <li><a href="/eksternt-erhervsforloeb">Eksternt erhvervsforløb</a></li>
-                            <li><a href="/erhervs-uddanelsesmentor">Erhvervs- og uddannelsesmentor</a></li>
-                            <li><a href="/special-paagogisk-mentor">Særlig special pædagogisk mentor og coach</a></li>
-                            <li><a href="/beskyttet-beskraatigelse">Beskyttet beskræftigelse §103/104</a></li>
-                            <li><a href="/dag-tilbud">Dag aktivitetstilbud §104</a></li>
-                            <li><a href="/saarbare-kvinder">Særligt tilbud til sårbare kvinder</a></li>
-                        </ul>
-                        <ul id="network-navigation">
-                            <li><a href="/netvaerksgrupper">Netværksgrupper</a></li>
-                            <li><a href="/specialpaagogisk-stoette">Specialpædagogisk støtte og vejledning</a></li>
-                            <li><a href="/siger-folk-netvaerksafdeling">Det siger folk om netværksafdeling</a></li>
-                        </ul>
-                        <ul id="counsel-navigation">
-                            <li class="has-sub-menu"><a href="/raadgivning">Rådgivning</a>
-                                <ul class="sub-menu">
-                                    <li><a href="/raadgivning/foraeldreraadgivning">Forældrerådgivning</a></li>
-                                    <li><a href="/raadgivning/raadgivning-supervision">Rådgivning og supervision til fagfolk</a></li>
-                                    <li><a href="/raadgivning/psykoedukation">Psykoedukation, støtte- og psykologsamtaler</a></li>
-                                    <li><a href="/raadgivning/seksualvejledning">Seksualvejledning</a></li>
-                                    <li><a href="/raadgivning/telefonraadgivning">Telefonrådgivning</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-sub-menu"><a href="/kursus">Kursus og undervisning</a>
-                                <ul class="sub-menu">
-                                    <li><a href="/kursus/kursus-undervisning/kursus-katalog">Kursuskatalog</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="/behandling-angst">Behandling af angst og/eller OCD for personer med ASF</a></li>
-                            <li><a href="/undervisning-organisationer">Undervisning for organisationer</a></li>
-                            <li class="has-sub-menu"><a href="/udredning">Udredning</a>
-                                <ul class="sub-menu">
-                                    <li><a href="/udredning/psykologisk-funktionsudredning">Psykologisk funktionsudredning</a></li>
-                                    <li><a href="/udredning/diagnotisk-udredning">Diagnostisk udredning of afklaring</a></li>
-                                    <li><a href="/udredning/udredning-sprog-kommunikation">Udredning af sprog og kommunikation</a></li>
-                                    <li><a href="/udredning/neuropsykologisk-udredning">Neuropsykologisk udredning</a></li>
-                                    <li><a href="/udredning/paa-vej-til-undersoegelse">På vej til undersøgelse</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul id="research-navigation">
-                            <li><a href="/overordnet-formaal">Overordnet formål med FUA</a></li>
-                            <li><a href="/specifikke-maalomraader">Specifikke målområder</a></li>
-                            <li><a href="/igangvaarende-projekter">Igangværende projekter</a></li>
-                            <li><a href="/afsluttende-projekter">Afsluttede projekter</a></li>
-                            <li><a href="/nyt-fra-fagfolk">Nyt fra andre fagfolk</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                            
+                        <?php wp_nav_menu( array( 'menu' => 'education-navigation', 'container'=> false, 'menu_class'=> false, 'menu_id'=> 'education-navigation' ) ); ?>
+                        <?php wp_nav_menu( array( 'menu' => 'network-navigation', 'container'=> false, 'menu_class'=> false, 'menu_id'=> 'network-navigation' ) ); ?>
+                        <?php wp_nav_menu( array( 'menu' => 'counsel-navigation', 'container'=> false, 'menu_class'=> false, 'menu_id'=> 'counsel-navigation' ) ); ?>
+                        <?php wp_nav_menu( array( 'menu' => 'research-navigation', 'container'=> false, 'menu_class'=> false, 'menu_id'=> 'research-navigation' ) ); ?>
+
+                    </div>
             </div>
             <div class="education">
                 <div class="container shaded">

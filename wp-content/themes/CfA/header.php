@@ -69,6 +69,11 @@
 	if (is_front_page()) { 
 		echo 'home'; 
 	} ?>">
+	<style>
+		html {
+			margin-top: 0 !important;
+		}
+	</style>
 
 	
     <!-- Header -->

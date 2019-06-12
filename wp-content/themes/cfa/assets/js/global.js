@@ -100,6 +100,7 @@ function search() {
 
 
 jQuery(function() {
+
     temporary_showcase_function();
 
     search();

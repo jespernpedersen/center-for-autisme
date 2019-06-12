@@ -63,3 +63,26 @@ function jnp_scripts() {
 	wp_enqueue_script( 'jnp-scripts', get_template_directory_uri() . '/assets/js/scripts.js' );
 }
 add_action( 'wp_enqueue_scripts', 'jnp_scripts' );
+
+
+function cfa_widgets() {
+
+	register_sidebar( array(
+		'name'          => 'Udvidet Menu',
+		'id'            => 'expanded_navigation',
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '',
+		'after_title'   => '',
+		'container' => false
+	) );
+
+}
+add_action( 'widgets_init', 'cfa_widgets' );
+
+add_filter('widget_title','my_widget_title'); 
+
+function my_widget_title($t)
+{
+    return null;
+}
