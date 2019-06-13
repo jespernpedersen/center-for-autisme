@@ -1,0 +1,26 @@
+/*!
+Theme Name: Center for Autisme
+Theme URI: 
+Author: Jesper Nissen-Pedersen
+Author URI: http://jespernpedersen.dk
+Description: Center for Autisme Tema
+Version: 1.0.0
+License: GNU General Public License v2 or later
+Text Domain: jespernpedersen
+*/
+
+
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    position: absolute !important;
+    word-wrap: normal !important;
+}
