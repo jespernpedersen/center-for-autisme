@@ -350,3 +350,51 @@ Content
     border-radius: 32px;
     display: block;
 }
+
+
+/* 
+--------------------------------------------------------
+
+Search Results Page
+
+--------------------------------------------------------
+*/
+
+main.search-results #subpage .container {
+    grid-template-columns: 1fr;
+}
+
+body.search-results h1 {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+body.search-results #search-results {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 45px;
+}
+
+body.search-results .btn {
+    background-color: white;
+}
+
+body.search-results #content h2:first-of-type {
+    margin-top: 0;
+}
+
+body.search-results article.education-category h2 {
+    border-color: var(--education);
+}
+
+body.search-results article.counsel-category h2 {
+    border-color: var(--counsel);
+}
+
+body.search-results article.network-category h2 {
+    border-color: var(--network);
+}
+
+body.search-results article.research-category h2 {
+    border-color: var(--research);
+}

@@ -86,3 +86,10 @@ function my_widget_title($t)
 {
     return null;
 }
+
+
+function custom_cfa_form() {
+	echo "Hello World";
+}
+
+apply_filters( 'get_search_form', 'custom_cfa_form' );

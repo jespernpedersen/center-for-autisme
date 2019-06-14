@@ -76,9 +76,16 @@
 		echo 'home'; 
 	} ?> 
     <?php 
-	if (!is_front_page()) { 
+	if (!is_front_page() && !is_search()) { 
        echo get_field('category_color');
-	} ?>">
+    }
+    else if(is_search()) {
+        echo 'search-results';
+    }
+    else {
+        
+    }
+    ?>">
 	<style>
 		html {
 			margin-top: 0 !important;
@@ -106,7 +113,9 @@
         <div id="search-wrapper">
             <div class="container">
                 <div id="search-inner">
-                    <input type="text" required name="search" id="search-field" placeholder="Søg på emner eller termer" />
+                    <?php 
+                        get_search_form();
+                    ?>
                     <button type="submit" name="search-submit"><i class="fas fa-search"></i></button>
 
                     <span class="close-search">

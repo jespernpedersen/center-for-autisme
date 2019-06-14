@@ -273,6 +273,10 @@ header {
     position: relative;
 }
 
+header.page-header {
+    background-color: transparent;
+}
+
 header #logo-wrapper {
     float: left;
 }
@@ -291,6 +295,10 @@ header aside ul {
 header aside ul+ul {
     margin-left: 32px;
     margin-right: 32px;
+}
+
+#searchform {
+    display: inline;
 }
 
 header ul#top-menu a {
