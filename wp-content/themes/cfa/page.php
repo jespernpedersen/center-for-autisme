@@ -12,16 +12,16 @@ get_header();
 	$category = get_field('category_color');
 	if(!has_post_thumbnail()) {
 		if($category == 'education-category') {
-			$featured_image = '/center-for-autisme/wp-content/uploads/2019/06/youth-education.jpg';
+			$featured_image = '/wp-content/uploads/2019/06/youth-education.jpg';
 		}
 		else if ($category == 'network-category') {
-			$featured_image = '/center-for-autisme/wp-content/uploads/2019/06/network-featured.jpg';
+			$featured_image = '/wp-content/uploads/2019/06/network-featured.jpg';
 		}
 		else if ($category == 'counsel-category') {
-			$featured_image = '/center-for-autisme/wp-content/uploads/2019/06/counsel-featured.jpg';
+			$featured_image = '/wp-content/uploads/2019/06/counsel-featured.jpg';
 		}  
 		else if ($category == 'research-category') {
-			$featured_image = '/center-for-autisme/wp-content/uploads/2019/06/research-featured.jpg';
+			$featured_image = '/wp-content/uploads/2019/06/research-featured.jpg';
 		} 
 	}
 	else {
