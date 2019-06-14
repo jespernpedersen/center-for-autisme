@@ -1,7 +1,8 @@
 
         <div id="newsletter">
             <div class="container">
-                <h3>Ønsker du at modtage vores nyhedsbrev?</h3>
+                <h3>Nyhedsbrev</h3>
+                <h4>Ønsker du at modtage de nyeste opdateringer fra CfA?</h4>
                 <p>Når du tilmelder dig vores nyhedsbrev, kan du forvente at modtage nyhedsbreve med indhold fra alle vores forskellige afdelinger her på Center for Autisme. Du vil altid have mulighed for at afmelde nyhedsbrevet, hvis det ikke har din interesse.</p>
                 <form>
                     <div id="input-fields">
