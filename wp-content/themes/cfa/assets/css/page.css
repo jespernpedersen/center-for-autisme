@@ -100,6 +100,89 @@ Breadcrumb
 /* 
 --------------------------------------------------------
 
+Call to Action - Guide Tour
+
+--------------------------------------------------------
+*/
+
+#cta-guidetour {
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+    background-color: var(--education);
+    color: #FFF;
+}
+
+#cta-guidetour .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cta-guidetour a.btn {
+    color: #000;
+    margin-top: 0;
+}
+
+body:before {
+    content: "";
+    pointer-events: none;
+    opacity: 0;
+    background-color: black;
+    transition: 0.3s ease-in-out;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+body.modal-active {
+    overflow: hidden;
+}
+
+body.modal-active:before {
+    opacity: 0.6;
+}
+
+#modal-window {
+    background-color: #FFF;
+    position: fixed;
+    padding: 50px 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 51;
+}
+
+.close-modal {
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#modal-window input {
+    padding: .875rem 1rem;
+    outline: none;
+    box-shadow: none;
+    background-image: none;
+    border: none;
+    border: 1px solid #CCC;
+    width: 100%;
+    margin-top: 5px;
+}
+
+#modal-window input:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+
+/* 
+--------------------------------------------------------
+
 Category Navigation
 
 --------------------------------------------------------

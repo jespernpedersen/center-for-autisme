@@ -76,11 +76,22 @@ function search() {
     });
 }
 
-
+function modal() {
+    jQuery(".open-modal").click(function(e) {
+        jQuery("#modal-window").show();
+        jQuery("body").addClass("modal-active");
+    });
+    jQuery(".close-modal").click(function(e) {
+        jQuery("#modal-window").hide();
+        jQuery("body").removeClass("modal-active");
+    });
+}
 
 jQuery(function() {
 
     search();
+
+    modal();
 
     jQuery("#main-navigation ul li a").click(function(e) {
         menu();
