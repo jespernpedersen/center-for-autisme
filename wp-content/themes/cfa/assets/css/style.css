@@ -881,7 +881,7 @@ form#hero-search {
 }
 
 .navigation-wrapper {
-    height: 310px;
+    height: 370px;
     max-height: 0;
     transition: 0.3s ease-in-out;
     transition-delay: 0.5s;
@@ -889,7 +889,7 @@ form#hero-search {
 }
 
 .hero-row.main-menu-active .navigation-wrapper {
-    max-height: 310px;
+    max-height: 370px;
     margin-bottom: 30px;
 }
 
