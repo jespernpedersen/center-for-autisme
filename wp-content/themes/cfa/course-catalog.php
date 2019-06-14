@@ -1,13 +1,9 @@
 <?php
-/**
- * The template for displaying all pages
- *
- */
-
+/*Template Name: Kursus*/
 get_header();
 ?>
 
-<main>
+<main id="course-catalog">
 <?php 
 	$category = get_field('category_color');
 	if(!has_post_thumbnail()) {
@@ -111,8 +107,32 @@ get_header();
                 </aside>
                 <!-- Main Content -->
                 <section id="content">
-					<h1><?php echo get_the_title(); ?></h1>
-					<?php the_content(); ?>
+                <?php
+                                
+                query_posts(array(
+                    'post_type' => 'kursuskatalog'
+                ));
+                    while (have_posts()) : the_post(); 
+                        $seats = get_field('seats');
+                    ?>
+                    <div class="course-item">
+                        <div class="item-inner">
+                            <span class="uncollapse">
+                                <i class="fas fa-bars"></i>
+                            </span>
+                            <h2><?php the_title(); ?></h2>
+                            <div class="cta-wrapper">
+                                <span class="seats"><?php echo $seats; ?></span>
+                                <button class="btn" data-course-id="<?php the_ID(); ?>">Book nu</button>
+                            </div>
+                        </div>
+                        <div class="additional-content">
+                            <p><?php the_excerpt(); ?></p>
+                        </div>
+                    </div>
+                <?php 
+                    endwhile; 
+                ?>
 				</section>
     </a></div></div>
 <?php

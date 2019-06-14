@@ -87,7 +87,37 @@ function modal() {
     });
 }
 
+function expand_course() {
+    jQuery(".course-item .uncollapse").click(function(e) {
+        jQuery(this).parent().parent().toggleClass("uncollapse");
+    });
+}
+
+
+function book_course() {
+    jQuery('.course-item .btn').click(function(e) {
+        e.preventDefault();
+        console.log("Click");
+        var $button = $(this);
+
+        // set ajax data
+        var data = {
+            'action': '',
+            'post_id': $button.data('course-id')
+        };
+
+        jQuery.post(settings.ajaxurl, data, function(response) {
+            console.log('ok');
+        });
+
+    });
+}
+
 jQuery(function() {
+
+    // book_course();
+
+    expand_course();
 
     search();
 

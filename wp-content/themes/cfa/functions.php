@@ -61,6 +61,13 @@ function jnp_scripts() {
 	wp_enqueue_style( 'jnp-custom-style', get_template_directory_uri() . '/assets/css/style.css' );
 	wp_enqueue_style( 'jnp-responsive', get_template_directory_uri() . '/assets/css/responsive.css' );
 	wp_enqueue_script( 'jnp-scripts', get_template_directory_uri() . '/assets/js/scripts.js' );
+	wp_enqueue_script( 'book_course', get_template_directory_uri() . '/assets/js/book-course.js', array( 'jquery' ), null, true );
+
+    // set variables for script
+    wp_localize_script( 'book_course', 'settings', array(
+		'ajaxurl'    => admin_url( 'admin-ajax.php' )
+    ) );
+
 }
 add_action( 'wp_enqueue_scripts', 'jnp_scripts' );
 
@@ -87,9 +94,19 @@ function my_widget_title($t)
     return null;
 }
 
-
-function custom_cfa_form() {
-	echo "Hello World";
+function course_catalog_post() {
+	register_post_type( 'kursuskatalog',
+	// CPT Options
+	array(
+	  'labels' => array(
+	   'name' => __( 'Kursuskatalog' ),
+	   'singular_name' => __( 'kursus' )
+	  ),
+	  'public' => true,
+	  'has_archive' => true,
+	  'rewrite' => array('slug' => 'kursus'),
+	 )
+	);
 }
-
-apply_filters( 'get_search_form', 'custom_cfa_form' );
+// Hooking up our function to theme setup
+add_action( 'init', 'course_catalog_post' );
