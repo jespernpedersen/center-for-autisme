@@ -372,6 +372,7 @@ body.search-results h1 {
 body.search-results #search-results {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-row-gap: 45px;
     grid-column-gap: 45px;
 }
 
