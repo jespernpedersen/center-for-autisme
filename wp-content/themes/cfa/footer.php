@@ -23,6 +23,11 @@
                 <br><br>2730 Herlev
                 <br><br>Fax: +45 44 98 23 53
                 <br><br>CVR-nr. 17 19 55 49
+                
+                <ul id="contact-info">
+                    <li><a href="callto:+4544982355" title="Du kan ringe til os hvis du er i tvivl om noget"><i class="fas fa-phone"></i><span>+45 44 98 23 55</span></a></li>
+                    <li><a href="mailto:info@centerforautisme.dk" title="Du kan skrive en mail til os ved at klikke her"><i class="far fa-envelope"></i><span>info@centerforautisme.dk</span></a></li>
+                </ul>
             </address>
             <a href="https://www.google.com/maps/place/Herlev+Hovedgade+199,+2730+Herlev/@55.724695,12.4210669,17z/data=!3m1!4b1!4m5!3m4!1s0x46525045f06a5cd3:0x76c7917b18c1e710!8m2!3d55.724692!4d12.4232609" alt="Klik her for at se på Google Maps"><iframe width="535" height="250" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ01xq8EVQUkYREOfBGHuRx3Y&key=AIzaSyAp5kZIFOt2hU2kCLEZ2h3jY4Z8jAmV12k" allowfullscreen></iframe>
             </a>

@@ -91,10 +91,7 @@
                 <a href="/" id="logo" title="Klik her for at gå til forsiden"><img src="/wp-content/themes/cfa/assets/images/cfa-logo.png" alt="Center for Autisme"></a>
             </div>
             <aside>
-                <ul id="contact-info">
-                    <li><a href="callto:+4544982355" title="Du kan ringe til os hvis du er i tvivl om noget"><strong>Ring til os</strong><span>+45 44 98 23 55</span><i class="fas fa-phone"></i></a></li>
-                    <li><a href="mailto:info@centerforautisme.dk" title="Du kan skrive en mail til os ved at klikke her"><strong>Skriv til os</strong><span>info@centerforautisme.dk</span><i class="far fa-envelope"></i></a></li>
-                </ul>
+                <?php wp_nav_menu( array( 'menu' => 'top-menu', 'container'=> false, 'menu_class'=> false, 'menu_id'=> 'top-menu' ) ); ?>
                 <ul class="social-media">
                     <li>
                         <a href="https://www.facebook.com/CenterForAutisme" title="Følg med i Center for Autisme på Facebook"><img src="/wp-content/themes/cfa/assets/images/icon/facebook-icon.png" alt="Icon of Facebook Social Media"></a>
