@@ -229,10 +229,15 @@ Category Navigation
     padding-bottom: 0;
 }
 
+#category-navigation .sub-menu {
+    padding-bottom: 10px;
+}
+
 #category-navigation .sub-menu li a {
     padding-left: 30px;
     font-size: 13px;
-    padding-bottom: 0px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 #category-navigation .sub-menu li a:before {
