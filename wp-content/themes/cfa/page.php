@@ -123,7 +123,7 @@ get_header();
 								$menu_object = wp_get_nav_menu_object("counsel-navigation" );
 								// This h2 should be dynamic. But still finding ways of having a name for a menu without changing its slug
 								?>
-								<h2>Rådgivning, behandling, undersøgelser, kurser</h2>
+								<h2>Rådgivning, behandling og kurser</h2>
 								<?php
 								echo '<nav>' . $menu = wp_nav_menu( array( 'menu' => 'counsel-navigation', 'container'=> false, 'menu_class'=> false, 'menu_id'=> 'counsel-navigation' ) ) . '</nav>';
 							}
