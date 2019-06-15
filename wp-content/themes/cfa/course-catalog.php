@@ -128,7 +128,7 @@ get_header();
                             </div>
                         </div>
                         <div class="additional-content">
-                            <p><?php the_excerpt(); ?></p>
+                            <p><?php the_content(); ?></p>
                         </div>
                     </div>
                 <?php 
