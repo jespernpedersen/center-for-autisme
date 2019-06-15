@@ -81,7 +81,7 @@ Breadcrumb
     color: #FFF;
 }
 
-#breadcrumb span:not(:last-of-type):after {
+#breadcrumb span:after {
     content: ">";
     display: inline-block;
     margin-left: 5px;
@@ -475,4 +475,27 @@ Kursuskatalog
 
 #course-catalog .uncollapse .additional-content {
     max-height: 700px;
+}
+
+div#pre-breadcrumb,
+p#breadcrumbs {
+    display: inline;
+}
+
+div#pre-breadcrumb a {
+    border-bottom: 1px solid #FFF;
+}
+
+div#pre-breadcrumb span:last-of-type:after {
+    margin-right: 0;
+}
+
+p#breadcrumbs span:after {
+    content: "";
+}
+
+p#breadcrumbs a+span.breadcrumb_last:before {
+    content: ">";
+    margin-left: 5px;
+    margin-right: 5px;
 }

@@ -62,7 +62,36 @@ get_header();
             <div class="container">
 			<?php
 				if ( function_exists('yoast_breadcrumb') ) {
-					yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+					?>
+					<?php
+					$over_category = get_field('over_category');
+					if($category == 'education-category') {
+						$breadcrumb = '<span><a href="/job-og-uddannelse/">Job og uddannelse</a></span>';
+					}
+					else if($category == 'network-category') {
+						$breadcrumb = '<span><a href="/netvaerksafdelingen/">Netværksafdelingen</a></span>';
+					}
+					else if($category == 'counsel-category') {
+						$breadcrumb = '<span><a href="/raadgivning-undersoegelser-og-kurser/">Rådgivning</a></span>';
+					}
+					else if($category == 'research-category') {
+						$breadcrumb = '<span><a href="/forskning-udvikling/">Forskning og udvikling</a></span>';
+					}
+					else {
+						$breacrumb = '';
+					}
+					?>
+					<div id="pre-breadcrumb">
+					<span><a href="/">Forside</a></span>
+					<?php
+					if($over_category != 1) {
+						echo $breadcrumb;
+					}
+					?>
+					</div>
+					<?php
+					yoast_breadcrumb( '<p id="breadcrumbs">
+					','</p>' );
 				}
 				?>            
 			</div>
