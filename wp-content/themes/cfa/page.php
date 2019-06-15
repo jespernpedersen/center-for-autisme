@@ -72,7 +72,7 @@ get_header();
 						$breadcrumb = '<span><a href="/netvaerksafdelingen/">Netværksafdelingen</a></span>';
 					}
 					else if($category == 'counsel-category') {
-						$breadcrumb = '<span><a href="/raadgivning-undersoegelser-og-kurser/">Rådgivning</a></span>';
+						$breadcrumb = '<span><a href="/raadgivning-undersoegelser-og-kurser/">Rådgivning, behandling og kurser</a></span>';
 					}
 					else if($category == 'research-category') {
 						$breadcrumb = '<span><a href="/forskning-udvikling/">Forskning og udvikling</a></span>';
