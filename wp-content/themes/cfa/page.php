@@ -156,7 +156,7 @@ get_header();
 	<?php if($category == 'education-category') { ?>
 	<div id="modal-window" style="display: none;">
 		<div class="modal-inner">
-			<?php echo do_shortcode('[contact-form-7 id="94" title="Book en rundvisning"]'); ?>
+			<?php echo do_shortcode('[contact-form-7 id="274" title="Book en rundvisning"]'); ?>
 		</div>
 		<span class="close-modal"><i class="fas fa-times"></i></span>
 	</div>
