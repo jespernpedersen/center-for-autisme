@@ -107,8 +107,9 @@ get_header();
                 </aside>
                 <!-- Main Content -->
                 <section id="content">
-                <?php
-                                
+                <h1><?php echo get_the_title(); ?></h1>
+                <?php the_content(); ?>  
+                <?php           
                 query_posts(array(
                     'post_type' => 'kursuskatalog'
                 ));
