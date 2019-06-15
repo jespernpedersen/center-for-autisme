@@ -95,7 +95,16 @@ get_header();
 				}
 				?>            
 			</div>
-        </div>
+		</div>
+		<?php if($category == 'education-category') { ?>
+		<!-- Call to Action - Guidetour -->
+		<div id="cta-guidetour">
+				<div class="container">
+				<h3>Book en rundvisning og kom og besøg os</h3>
+				<a class="btn open-modal" href="#">Book nu</a>
+				</div>
+		</div>
+		<?php } ?>
         <div id="subpage">
             <div class="container">
                 <!-- Content -->
@@ -143,7 +152,15 @@ get_header();
 					<h1><?php echo get_the_title(); ?></h1>
 					<?php the_content(); ?>
 				</section>
-    </a></div></div>
+	</a></div></div>
+	<?php if($category == 'education-category') { ?>
+	<div id="modal-window" style="display: none;">
+		<div class="modal-inner">
+			<?php echo do_shortcode('[contact-form-7 id="94" title="Book en rundvisning"]'); ?>
+		</div>
+		<span class="close-modal"><i class="fas fa-times"></i></span>
+	</div>
+	<?php } ?>
 <?php
 get_sidebar();
 get_footer();
