@@ -51,6 +51,21 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="/wp-content/themes/cfa/assets/js/global.js"></script>
     <script src="/wp-content/themes/cfa/assets/js/index.js"></script>
+    <div id='fb-root'></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/da_DK/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <div class='fb-customerchat'
+    attribution="wordpress"
+    page_id='563351344153414'
+    theme_color='#4d94bf'
+    logged_in_greeting='Hej :) Har du nogen spørgsmål om autisme eller vores ydelser?'
+    logged_out_greeting='Hej :) Har du nogen spørgsmål om autisme eller vores ydelser?'
+  >
+</div> 
 </body>
 
 
