@@ -392,6 +392,10 @@ body.search-results h1 {
     margin-bottom: 0;
 }
 
+main.search-results #subpage article.entry .entry-content p {
+    word-break: break-all;
+}
+
 body.search-results #search-results {
     display: grid;
     grid-template-columns: 1fr 1fr;
