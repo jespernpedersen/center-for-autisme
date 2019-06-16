@@ -108,7 +108,7 @@ get_header();
 				</div>
 		</div>
 		<?php } ?>
-        <div id="subpage <?php if($category == 'no-category') { echo $category; } ?>">
+        <div id="subpage" class="<?php if($category == 'no-category') { echo $category; } ?>">
             <div class="container">
 				<!-- Content -->
                 <?php 
