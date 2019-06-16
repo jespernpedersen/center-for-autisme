@@ -297,7 +297,7 @@ body.counsel-category #featured-image:before {
 
 body.no-category #featured-image:before {
     background-color: black;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 body.research-category #featured-image:before {
