@@ -23,6 +23,9 @@ get_header();
 		else if ($category == 'research-category') {
 			$featured_image = '/wp-content/uploads/2019/06/research-featured.jpg';
 		} 
+        else {
+            $featured_image = '/wp-content/uploads/2019/06/center-for-autisme.png';
+        }
 	}
 	else {
 		$featured_image = get_the_post_thumbnail_url();
@@ -105,9 +108,12 @@ get_header();
 				</div>
 		</div>
 		<?php } ?>
-        <div id="subpage">
+        <div id="subpage <?php if($category == 'no-category') { echo $category } ?>">
             <div class="container">
-                <!-- Content -->
+				<!-- Content -->
+                <?php 
+                if($category != 'no-category') {
+                ?>
                 <!-- Category Navigation -->
                 <aside id="category-navigation">
                     <div class="category-inner">
@@ -146,7 +152,8 @@ get_header();
 							}
 						?>
                     </div>
-                </aside>
+				</aside>
+				<?php } ?>
                 <!-- Main Content -->
                 <section id="content">
 					<h1><?php echo get_the_title(); ?></h1>

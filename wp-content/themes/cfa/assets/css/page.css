@@ -262,6 +262,10 @@ Page Layout
     margin-bottom: 50px;
 }
 
+#subpage.no-category .container {
+    grid-template-columns: 1fr;
+}
+
 
 /* 
 --------------------------------------------------------
