@@ -295,6 +295,11 @@ body.counsel-category #featured-image:before {
     opacity: 0.5;
 }
 
+body.no-category #featured-image:before {
+    background-color: black;
+    opacity: 0.3;
+}
+
 body.research-category #featured-image:before {
     background-color: var(--research);
 }
