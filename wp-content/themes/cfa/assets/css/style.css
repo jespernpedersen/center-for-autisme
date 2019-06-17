@@ -1120,7 +1120,7 @@ main .row {
 }
 
 main .row.heading {
-    padding-bottom: 0;
+    padding-bottom: 15px;
     background-color: transparent;
 }
 
