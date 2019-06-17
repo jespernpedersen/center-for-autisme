@@ -38,6 +38,10 @@ get_header();
         <!-- Breadcrumb -->
         <div id="breadcrumb">
             <div class="container">
+				
+			<div id="pre-breadcrumb">
+				<span><a href="/">Forside</a></span>
+					</div>
 			<?php
 				if ( function_exists('yoast_breadcrumb') ) {
 					yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
@@ -54,7 +58,7 @@ get_header();
 					if ( have_posts() ) : ?>
 
 						<header class="page-header">
-							<h1>Results: <?php echo get_search_query(); ?></h1>
+							<h1>Søgeresultater på: <?php echo get_search_query(); ?></h1>
 						</header>
 						<div id="search-results">
 						<?php
