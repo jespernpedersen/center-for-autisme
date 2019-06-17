@@ -526,7 +526,7 @@ nav#main-navigation ul>li a:hover {
     cursor: pointer;
 }
 
-nav#main-navigation ul>li.menu-item-active,
+nav#main-navigation ul>li.active,
 nav#main-navigation ul>li:hover {
     background-color: #000;
     color: #ebebeb;
@@ -535,31 +535,32 @@ nav#main-navigation ul>li:hover {
 
 /** Main Navigation 4 Buttons **/
 
-nav#main-navigation ul>li:first-of-type.menu-item-active,
+nav#main-navigation ul>li:first-of-type.active,
 nav#main-navigation ul>li:first-of-type:hover,
 nav#main-navigation ul>li:first-of-type:before {
     background-color: var(--education);
 }
 
-nav#main-navigation ul>li:nth-of-type(2).menu-item-active,
+nav#main-navigation ul>li:nth-of-type(2).active,
 nav#main-navigation ul>li:nth-of-type(2):hover,
 nav#main-navigation ul>li:nth-of-type(2):before {
     background-color: var(--network);
 }
 
-nav#main-navigation ul>li:nth-of-type(3).menu-item-active,
+nav#main-navigation ul>li:nth-of-type(3).active,
 nav#main-navigation ul>li:nth-of-type(3):hover,
-nav#main-navigation ul>li:nth-of-type(3):before {
+nav#main-navigation ul>li:nth-of-type(3):before,
+nav#main-navigation ul>li:nth-of-type(3).active {
     background-color: var(--counsel);
 }
 
-nav#main-navigation ul>li:nth-of-type(4).menu-item-active,
+nav#main-navigation ul>li:nth-of-type(4).active,
 nav#main-navigation ul>li:nth-of-type(4):hover,
 nav#main-navigation ul>li:nth-of-type(4):before {
     background-color: var(--research);
 }
 
-nav#main-navigation ul>li.menu-item-active:before,
+nav#main-navigation ul>li.active:before,
 nav#main-navigation ul>li:first-of-type:hover:before,
 nav#main-navigation ul>li:nth-of-type(2):hover:before,
 nav#main-navigation ul>li:nth-of-type(3):hover:before,

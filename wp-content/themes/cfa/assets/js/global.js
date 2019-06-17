@@ -1,8 +1,8 @@
-function menu() {
+function menu(e) {
 
     // Add Class to make element active, we will reset it first
-    jQuery("#main-navigation ul li").removeClass("menu-item-active");
-    jQuery(this).parent().addClass("menu-item-active");
+    jQuery("#main-navigation ul li").removeClass("active");
+    jQuery(e).parent().addClass("active");
     jQuery(".hero-row").addClass("main-menu-active");
 
     mega_menu = jQuery(".navigation-wrapper");
@@ -124,7 +124,7 @@ jQuery(function() {
     modal();
 
     jQuery("#main-navigation ul li a").click(function(e) {
-        menu();
+        menu(e);
         // Show Specific Menu
         if (jQuery(this).hasClass("education-menu")) {
             education_menu();
