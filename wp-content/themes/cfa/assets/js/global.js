@@ -2,7 +2,6 @@ function menu(e) {
 
     // Add Class to make element active, we will reset it first
     jQuery("#main-navigation ul li").removeClass("active");
-    jQuery(e).parent().addClass("active");
     jQuery(".hero-row").addClass("main-menu-active");
 
     mega_menu = jQuery(".navigation-wrapper");
@@ -127,15 +126,19 @@ jQuery(function() {
         menu(e);
         // Show Specific Menu
         if (jQuery(this).hasClass("education-menu")) {
+            jQuery(this).parent().addClass("active");
             education_menu();
         }
         if (jQuery(this).hasClass("network-menu")) {
+            jQuery(this).parent().addClass("active");
             network_menu();
         }
         if (jQuery(this).hasClass("counsel-menu")) {
+            jQuery(this).parent().addClass("active");
             counsel_menu();
         }
         if (jQuery(this).hasClass("research-menu")) {
+            jQuery(this).parent().addClass("active");
             research_menu();
         }
     });
