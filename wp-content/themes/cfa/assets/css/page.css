@@ -262,6 +262,11 @@ Page Layout
     grid-template-columns: 1fr;
 }
 
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 
 /* 
 --------------------------------------------------------
