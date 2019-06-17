@@ -5,7 +5,7 @@ function menu() {
     jQuery(this).parent().addClass("menu-item-active");
     jQuery(".hero-row").addClass("main-menu-active");
 
-    mega_menu = jQuery(".expanded-navigation");
+    mega_menu = jQuery(".navigation-wrapper");
     // Show Wrapper
     jQuery(mega_menu).addClass("active");
 }
@@ -163,11 +163,11 @@ jQuery(function() {
     jQuery("span.close-menu").click(function(e) {
         // Reset Menu
 
-        jQuery(".expanded-navigation").removeClass("active");
-        jQuery(".expanded-navigation").removeClass("education");
-        jQuery(".expanded-navigation").removeClass("network");
-        jQuery(".expanded-navigation").removeClass("counsel");
-        jQuery(".expanded-navigation").removeClass("research");
+        jQuery(".navigation-wrapper").removeClass("active");
+        jQuery(".navigation-wrapper").removeClass("education");
+        jQuery(".navigation-wrapper").removeClass("network");
+        jQuery(".navigation-wrapper").removeClass("counsel");
+        jQuery(".navigation-wrapper").removeClass("research");
 
 
         jQuery("ul#education-navigation").removeClass("active");

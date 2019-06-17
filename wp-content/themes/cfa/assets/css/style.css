@@ -571,7 +571,6 @@ nav#main-navigation ul>li:nth-of-type(4):hover:before {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #FFF;
     top: 0;
     left: 0;
     transition: 0.3s ease-in-out;
@@ -611,7 +610,7 @@ li.has-sub-menu {
     display: none;
 }
 
-.expanded-navigation.active {
+.navigation-wrapper.active .expanded-navigation {
     opacity: 1 !important;
     /* overwrite inline CSS */
     pointer-events: all !important;
@@ -675,19 +674,19 @@ li.has-sub-menu {
 
 /* Different Menus */
 
-.expanded-navigation.education {
+.navigation-wrapper.education {
     background-color: var(--education);
 }
 
-.expanded-navigation.network {
+.navigation-wrapper.network {
     background-color: var(--network);
 }
 
-.expanded-navigation.counsel {
+.navigation-wrapper.counsel {
     background-color: var(--counsel);
 }
 
-.expanded-navigation.research {
+.navigation-wrapper.research {
     background-color: var(--research);
 }
 
@@ -898,7 +897,6 @@ form#hero-search {
 
 .hero-row.main-menu-active .navigation-wrapper {
     max-height: 370px;
-    margin-bottom: 30px;
 }
 
 .hero-row .navigation-wrapper .container {
@@ -911,7 +909,6 @@ form#hero-search {
 }
 
 .hero-row .education .container {
-    background-color: #FFF;
     position: relative;
 }
 
@@ -920,6 +917,10 @@ form#hero-search {
     padding: 40px 45px 40px 45px;
     color: #FFF;
     overflow: hidden;
+}
+
+.hero-row .counsel.navigation-wrapper .container {
+    background-color: transparent;
 }
 
 .counsel p a {
