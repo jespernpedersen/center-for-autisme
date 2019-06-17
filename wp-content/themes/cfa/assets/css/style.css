@@ -664,7 +664,7 @@ li.has-sub-menu {
     padding-bottom: 10px;
 }
 
-.expanded-navigation>ul>li:first-of-type a:after {
+.expanded-navigation>ul>li:first-of-type>a:after {
     border-bottom: 4px solid #FFF;
     content: "";
     width: 100%;
