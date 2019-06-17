@@ -908,7 +908,7 @@ form#hero-search {
     top: -89px;
 }
 
-.hero-row main .education>.container {
+.hero-row .education>.container {
     position: relative;
     background-color: #FFF;
 }
