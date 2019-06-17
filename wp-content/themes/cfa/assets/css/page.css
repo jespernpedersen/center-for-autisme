@@ -353,6 +353,10 @@ Content
     margin-top: 30px;
 }
 
+#content p+h3 {
+    margin-top: 30px;
+}
+
 #content p {
     margin-bottom: 20px;
 }
