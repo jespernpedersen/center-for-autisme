@@ -674,19 +674,35 @@ li.has-sub-menu {
 
 /* Different Menus */
 
-.navigation-wrapper.education {
+body:not(.home) .navigation-wrapper.education {
     background-color: var(--education);
 }
 
-.navigation-wrapper.network {
+body.home .navigation-wrapper.education .expanded-navigation {
+    background-color: var(--education);
+}
+
+body:not(.home) .navigation-wrapper.network {
     background-color: var(--network);
 }
 
-.navigation-wrapper.counsel {
+body.home .navigation-wrapper.network .expanded-navigation {
+    background-color: var(--network);
+}
+
+body:not(.home) .navigation-wrapper.counsel {
     background-color: var(--counsel);
 }
 
-.navigation-wrapper.research {
+body.home .navigation-wrapper.counsel .expanded-navigation {
+    background-color: var(--counsel);
+}
+
+body:not(.home) .navigation-wrapper.research {
+    background-color: var(--research);
+}
+
+body.home .navigation-wrapper.research {
     background-color: var(--research);
 }
 
@@ -908,7 +924,7 @@ form#hero-search {
     top: -89px;
 }
 
-.hero-row .education>.container {
+.hero-row #education-row .container {
     position: relative;
     background-color: #FFF;
 }

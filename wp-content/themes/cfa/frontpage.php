@@ -39,7 +39,7 @@ get_header();
                     </nav>
                 </div>
             </div>
-            <div class="education">
+            <div id="education-row">
                 <div class="container shaded">
                     <header class="row heading">
                         <h1><?php echo get_the_title(); ?></h1>
