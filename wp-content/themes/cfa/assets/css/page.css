@@ -481,17 +481,27 @@ Kursuskatalog
 }
 
 #course-catalog .course-item .seats {
+    margin-right: 10px;
+    text-align: center;
+    background-color: #FFF;
+    padding: 4px 10px;
+}
+
+#course-catalog .course-item .seats .seats-number {
     display: inline-block;
     vertical-align: middle;
-    background-color: #FFF;
     color: #000;
-    padding: 10px;
-    width: 47px;
-    height: 47px;
     text-align: center;
-    margin-right: 10px;
-    font-size: 24px;
+    font-size: 20px;
     margin-left: auto;
+    font-weight: bold;
+}
+
+span.seats-text {
+    display: block;
+    margin-top: 0;
+    font-size: 13px;
+    color: #000;
 }
 
 #course-catalog .course-item .cta-wrapper {

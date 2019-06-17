@@ -161,7 +161,10 @@ get_header();
                             </span>
                             <h2><?php the_title(); ?></h2>
                             <div class="cta-wrapper">
-                                <span class="seats"><?php echo $seats; ?></span>
+								<span class="seats">
+									<span class="seats-number"><?php echo $seats; ?></span>
+									<span class="seats-text">Pladser tilbage</span>
+								</span>
                                 <button class="btn" data-course-id="<?php the_ID(); ?>">Book nu</button>
                             </div>
                         </div>
