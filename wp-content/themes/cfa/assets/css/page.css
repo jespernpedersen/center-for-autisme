@@ -353,12 +353,8 @@ Content
     margin-top: 30px;
 }
 
-#content h3+p {
-    margin-bottom: 5px;
-}
-
-#content p+p {
-    margin-bottom: 15px;
+#content p {
+    margin-bottom: 20px;
 }
 
 .course-catalog {
