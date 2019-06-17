@@ -37,7 +37,6 @@
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="/wp-content/themes/cfa/assets/css/responsive.css">
     <link rel="stylesheet" href="/wp-content/themes/cfa/assets/css/animate.css">
     <?php 
     if (!is_front_page()) {
@@ -46,6 +45,7 @@
     <?php
     } 
     ?>
+    <link rel="stylesheet" href="/wp-content/themes/cfa/assets/css/responsive.css">
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
