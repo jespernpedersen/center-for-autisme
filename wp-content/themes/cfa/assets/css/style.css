@@ -703,7 +703,7 @@ body:not(.home) .navigation-wrapper.research {
     background-color: var(--research);
 }
 
-body.home .navigation-wrapper.research {
+body.home .navigation-wrapper.research .expanded-navigation {
     background-color: var(--research);
 }
 
