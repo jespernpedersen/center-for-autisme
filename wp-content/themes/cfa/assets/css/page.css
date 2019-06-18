@@ -383,6 +383,13 @@ Content
     display: block;
 }
 
+.course-price {
+    display: block;
+    border-top: 2px solid #FFF;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
 
 /* 
 --------------------------------------------------------

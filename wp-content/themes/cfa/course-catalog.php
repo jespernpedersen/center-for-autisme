@@ -170,7 +170,10 @@ get_header();
                         </div>
                         <div class="additional-content">
                             <p><?php the_content(); ?></p>
-                        </div>
+							<?php if(get_field('course_price')) { ?>
+							<span class="course-price">Pris: Kr. <strong><?php echo get_field('course_price'); ?>,-</strong></span>
+							<?php } ?>
+						</div>
                     </div>
                 <?php 
                     endwhile; 
