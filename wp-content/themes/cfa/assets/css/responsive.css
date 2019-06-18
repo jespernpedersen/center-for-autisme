@@ -251,6 +251,9 @@ Mobile
             #course-catalog .course-item .cta-wrapper {
                 margin-top: 20px;
             }
+            body.search-results #search-results {
+                grid-template-columns: 1fr;
+            }
         }
         /* 
 --------------------------------------------------------
