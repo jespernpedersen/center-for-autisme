@@ -230,6 +230,27 @@ Mobile
                 background-repeat: no-repeat;
                 background-size: cover;
             }
+            #cta-guidetour {
+                padding-top: 20px;
+            }
+            #cta-guidetour .container {
+                display: block;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            #cta-guidetour h3 {
+                margin-bottom: 10px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            #course-catalog .course-item .item-inner {
+                display: block;
+            }
+            #course-catalog .course-item .cta-wrapper {
+                margin-top: 20px;
+            }
         }
         /* 
 --------------------------------------------------------
