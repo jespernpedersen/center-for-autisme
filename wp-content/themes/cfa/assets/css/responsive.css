@@ -275,4 +275,7 @@ Small Mobile (e.g. iPhone 4s)
                 grid-template-columns: 1fr;
                 grid-row-gap: 20px;
             }
+            header#site-header {
+                padding: 0;
+            }
         }
